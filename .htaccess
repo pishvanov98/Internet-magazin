@@ -1,0 +1,8 @@
+php_flag session.auto_start on
+php_flag output_buffering on
+RewriteEngine On
+RewriteBase /internetmagazin.ru/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /internetmagazin.ru/index.php?route=$1 [L]
