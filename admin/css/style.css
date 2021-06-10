@@ -1,0 +1,1068 @@
+﻿@charset "UTF-8";
+* {
+  margin: 0;
+  outline: none;
+  font-family: 'RobotoRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+}
+html {height: 100%}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #F5F5F5;
+
+ 
+}
+
+/* Стили для шапки */
+header a{
+  color: #966529;
+  text-decoration: none;
+}
+
+header a, p{
+  color: #966529;
+  text-decoration: none;
+}
+header a:hover{
+  color:#96AC56;
+}
+
+header {
+  width: 99%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 140%;
+  padding: 0.5%;
+  border-bottom: 2px solid silver;
+  margin-bottom: 20px;
+  
+}
+
+header #search{
+  position: absolute;
+  float: right;
+  right: 1%;
+}
+
+
+
+header #Logo a {
+  color: #966529;
+  font-size: 2em;
+}
+
+header #Logo span{
+color: #E69B3F;
+}
+
+header #menuHead {
+  width: 42%;
+  float: left;
+}
+header #menuHead div{
+  float: left;
+  padding: 5px;
+  background-color: #c8c8c8;
+  border-radius: 5px;
+  color: #2E482B;
+}
+header #menuHead div:active {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1)
+
+inset;box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1)
+
+inset;
+  -moz-transform: translatey(3px); /* Для Firefox */
+  -ms-transform: translatey(3px); /* Для IE */
+  -webkit-transform: translatey(3px); /* Для Safari, Chrome, iOS */
+  -o-transform:translatey(3px); /* Для Opera */
+  transform: translatey(3px);
+}
+
+header #menuHead div:hover{
+  background-color: #59A01E;
+  -webkit-transition: all.6s ease; /*появление цвета ссылки 6-секунд*/
+  -moz-transition: all.6s ease;
+  -o-transition: all.6s ease;
+  -ms-transition: all.6s ease;
+}
+
+
+.clear{
+  clear: both; /*Отделяет одну часть сайта от другой*/
+}
+
+.del-goods{
+  margin-left: 10px;
+}
+
+.sort {
+	margin:20px 0px 0px 20px;
+}
+.sort span {
+	color:blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+/*Стили для Footer */
+footer {
+  width: 98%;
+  float: left;
+  padding: 1%;
+  background-color: #fafafa;
+  border-top: 2px solid silver;
+  margin-top: 10px;
+
+}
+footer #lef_fot{
+  margin-left: 20%;
+  font-size: 110%;
+}
+
+footer #social {
+  float: left;
+  width: 50%;
+}
+footer #social img{
+width: 30px;
+height: 30px;
+float: left;
+margin-right: 5px;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 1.1em;
+}
+
+
+/*Стили для корзины админа*/
+.email-field{
+  margin: 1% 25%;
+  max-width:50%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:5px;
+  background:RGBA(255,255,255,1);
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+}
+.email-field p{
+  border:rgba(0,0,0,.3) 2px solid;
+  padding:10px;
+  margin-bottom:15px;
+}
+.email-field p input{
+  padding:0;
+  height:25px;
+  margin-top: 5px;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  color: #282F39;
+  font-size:18px;
+  width:35%;
+}
+.out select{
+  color: #777777;
+  width:100%;
+  height:25px;
+  padding:0;
+  margin-top: 5px;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.ou select{
+  color: #777777;
+  width:100%;
+  height:25px;
+  padding:0;
+  margin-top: 5px;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.ot select{
+  color: #777777;
+  width:100%;
+  height:25px;
+  padding:0;
+  margin-top: 5px;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.email-field{
+  color: #282F39;
+  font-size: 1.2em;
+}
+.textbox{
+  height:25px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  color: #282F39;
+  font-size:18px;
+  padding:10px;
+  margin-bottom:15px;
+}
+.message{
+    background: rgba(255, 255, 255, 0.4);
+    width:100%;
+    height: 120px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-size:18px;
+    color: #282F39;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+    resize: none;
+}
+.message:focus,
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
+ }
+
+ .add-to-db,
+ .del-to-db{
+   height:50px;
+   width:49.5%;
+   border-radius:3px;
+   border:rgba(0,0,0,.3) 0px solid;
+   box-sizing:border-box;
+   padding:0;
+   background:#90c843;
+   color:#FFF;
+   font-family: 'Open Sans', sans-serif;
+   font-weight:400;
+   font-size: 16pt;
+   transition:background .4s;
+   cursor:pointer;
+ }
+
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   height:50px;
+   width:49.5%;
+   border-radius:3px;
+   border:rgba(0,0,0,.3) 0px solid;
+   box-sizing:border-box;
+   padding:0;
+   background:#90c843;
+   color:#FFF;
+   font-family: 'Open Sans', sans-serif;
+   font-weight:400;
+   font-size: 16pt;
+   transition:background .4s;
+   cursor:pointer;
+ }
+
+
+.flexf{
+flex: 1 0 auto;
+}
+footer{
+  flex: 0 0 auto;
+}
+/*поиск*/
+
+
+.search_result{
+  margin:0;
+  padding:0 6px 8px 22px;
+  background:#FFF;
+  border:1px solid teal;
+  border-radius:4px;
+  display:none;
+  position: absolute;
+}
+.search_result li{margin:0;padding:4px 0 2px;line-height:16px;color:#0896D3;cursor:pointer;transition:0.3s;}
+.search_result li:hover{background-color:#fcfcc4;padding-left:6px;}
+.search_result li a{color:#666;font-size:15px;text-decoration:none;}
+.search_result li a:hover{color:teal;}
+
+@font-face {
+  font-family: "RobotoRegular"; 
+  src: url("../font/RobotoCondensed-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
+  #destroy{
+    text-decoration: none;
+    outline: none;
+    padding: 5px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+  #destroy:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+  }
+  #destroy:hover {
+    background: #fe6637;
+    color: #fff;
+  }
+  #destroy:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+  }
+  
+  #destroy:active {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1)
+  
+  inset;box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1)
+  
+  inset;
+    -moz-transform: translatey(3px); /* Для Firefox */
+    -ms-transform: translatey(3px); /* Для IE */
+    -webkit-transform: translatey(3px); /* Для Safari, Chrome, iOS */
+    -o-transform:translatey(3px); /* Для Opera */
+    transform: translatey(3px);
+  }
+
+  
+#toggleThemeBtn{
+  padding: 5px 20px;
+  border: 2px solid #E3E3E3;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border-radius:50px;
+  color: #9B692F;
+  font-size: 110%;
+  }
+  
+  #toggleThemeBtn:hover{
+    box-shadow: 0 0 10px silver;
+  }
+  
+  #toggleThemeBtn:active{
+    box-shadow: 0 0 5px silver;
+  }
+  body.dark{
+    background-color:#111111;
+  }
+  
+body.dark #toggleThemeBtn{
+  border: 2px solid #96AC56;
+  }
+  body.dark footer {
+    background-color: #373737;
+    color:#f4f4f4 ;
+    border-top: 2px solid silver;
+  }
+
+  
+  @media (max-width: 1550px) and (min-width: 1400px) {  
+    header {
+      font-size: 160%;
+    }
+    .textbox{
+      font-size:110%;
+      border: rgba(0,0,0,.3) 3px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 110%;
+      border: rgba(0,0,0,.3) 3px solid;
+    }
+    .controls{
+      font-size: 135%;
+    }
+    #toggleThemeBtn{
+      font-size: 120%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:100%;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:110%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+      .message{
+        font-size:110%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 3px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 120%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 120%;
+ }
+    
+
+footer #lef_fot{
+  font-size: 125%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 125%;
+}
+
+  }
+
+  @media (max-width: 1800px) and (min-width: 1551px) {  
+    header {
+      font-size: 180%;
+    }
+    .textbox{
+      font-size:130%;
+      border: rgba(0,0,0,.3) 3px solid;
+      height: 35px;
+    }
+    .email-field p{
+      font-size: 130%;
+      border: rgba(0,0,0,.3) 3px solid;
+    }
+    .controls{
+      font-size: 155%;
+    }
+    #toggleThemeBtn{
+      font-size: 140%;
+      }
+      .email-field p input{
+        height:35px;
+        font-size:100%;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:115%;
+        height: 35px;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+      .message{
+        font-size:120%;
+        height: 135px;
+        border: rgba(0,0,0,.3) 3px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 130%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 130%;
+ }
+    
+
+footer #lef_fot{
+  font-size: 140%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 140%;
+}
+  }
+  @media screen and (max-width: 2000px) and (min-width: 1801px) {  
+    header {
+      font-size: 200%;
+    }
+    .textbox{
+      font-size:150%;
+      border: rgba(0,0,0,.3) 3px solid;
+      height: 40px;
+    }
+    .email-field p{
+      font-size: 150%;
+      border: rgba(0,0,0,.3) 3px solid;
+    }
+    .controls{
+      font-size: 175%;
+    }
+    #toggleThemeBtn{
+      font-size: 160%;
+      }
+      .email-field p input{
+        height:40px;
+        font-size:100%;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:135%;
+        height: 40px;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+      .message{
+        font-size:140%;
+        height: 140px;
+        border: rgba(0,0,0,.3) 3px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 150%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 150%;
+ }
+    
+
+footer #lef_fot{
+  font-size: 160%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 160%;
+}
+  }
+  @media screen and (max-width: 1399px) and (min-width: 1100px) {  
+
+    header {
+      font-size: 130%;
+    }
+    .textbox{
+      font-size:100%;
+      border: rgba(0,0,0,.3) 3px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 100%;
+      border: rgba(0,0,0,.3) 3px solid;
+    }
+    .controls{
+      font-size: 115%;
+    }
+    #toggleThemeBtn{
+      font-size: 100%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:80%;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:95%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+      .message{
+        font-size:95%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 3px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 100%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 100%;
+ }
+    
+
+footer #lef_fot{
+  font-size: 105%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 105%;
+}
+
+  }
+
+  @media screen and (max-width: 1300px) and (min-width: 1200px) {  
+    header {
+      font-size: 120%;
+    }
+    .textbox{
+      font-size:90%;
+      border: rgba(0,0,0,.3) 3px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 90%;
+      border: rgba(0,0,0,.3) 3px solid;
+    }
+    .controls{
+      font-size: 115%;
+    }
+    #toggleThemeBtn{
+      font-size: 100%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:90%;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:90%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+      .message{
+        font-size:90%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 3px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 100%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 100%;
+ }
+    
+
+footer #lef_fot{
+  font-size: 105%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 105%;
+}
+  }
+
+  @media screen and (max-width: 1200px) and (min-width: 1100px) {  
+    header {
+      font-size: 120%;
+    }
+    .textbox{
+      font-size:90%;
+      border: rgba(0,0,0,.3) 3px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 90%;
+      border: rgba(0,0,0,.3) 3px solid;
+    }
+    .controls{
+      font-size: 115%;
+    }
+    #toggleThemeBtn{
+      font-size: 100%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:90%;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:90%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+      .message{
+        font-size:90%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 3px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 100%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 100%;
+ }
+    
+
+footer #lef_fot{
+  font-size: 105%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 105%;
+}
+  }
+
+  @media screen and (max-width: 1100px) and (min-width: 1000px) {  
+    header {
+      font-size: 110%;
+    }
+    .textbox{
+      font-size:80%;
+      border: rgba(0,0,0,.3) 3px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 80%;
+      border: rgba(0,0,0,.3) 3px solid;
+    }
+    .controls{
+      font-size: 105%;
+    }
+    #toggleThemeBtn{
+      font-size: 90%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:80%;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:80%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 3px solid;
+      }
+      .message{
+        font-size:80%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 3px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 90%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 90%;
+ }
+    
+
+footer #lef_fot{
+  font-size: 95%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 95%;
+}
+  }
+
+@media screen and (max-width: 800px) and (min-width: 500px) { 
+    header {
+      font-size: 85%;
+    }
+    .admPanel{
+      display: none;
+    }
+    .textbox{
+      font-size:80%;
+      border: rgba(0,0,0,.3) 2px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 80%;
+      border: rgba(0,0,0,.3) 2px solid;
+    }
+    .controls{
+      font-size: 105%;
+    }
+    #toggleThemeBtn{
+      font-size: 100%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:80%;
+        border: rgba(0,0,0,.3) 2px solid;
+	width:60%;
+      }
+	  .email-field{
+		  margin:2% 15%;
+		  max-width:70%;
+	  }
+
+      .out select, .ou select, .ot select{
+        font-size:70%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 2px solid;
+      }
+      .message{
+        font-size:70%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 2px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 70%;
+   height: 30px;
+   width: 49%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 70%;
+   width: 49%;
+   height: 40px;
+ }
+    
+
+footer #lef_fot{
+  font-size: 95%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 95%;
+}
+#destroy{
+
+  padding: 3px 8px;
+  margin: 8px 10px;
+}
+.menu_none{
+	display:none;
+}
+  }
+  
+  @media screen and (max-width: 500px) { 
+    header {
+      font-size: 75%;
+    }
+    .admPanel{
+      display: none;
+    }
+    .textbox{
+      font-size:80%;
+      border: rgba(0,0,0,.3) 2px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 80%;
+      border: rgba(0,0,0,.3) 2px solid;
+    }
+    .controls{
+      font-size: 105%;
+    }
+    #toggleThemeBtn{
+      font-size: 100%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:80%;
+        border: rgba(0,0,0,.3) 2px solid;
+	width:65%;
+      }
+	  .email-field{
+		  margin:2% 8%;
+		  max-width:90%;
+	  }
+
+      .out select, .ou select, .ot select{
+        font-size:70%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 2px solid;
+      }
+      .message{
+        font-size:70%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 2px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 70%;
+   height: 30px;
+   width: 45%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 70%;
+   width: 47%;
+   height: 40px;
+ }
+    
+
+footer #lef_fot{
+  display:none;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 80%;
+}
+#destroy{
+
+  padding: 3px 8px;
+  margin: 8px 10px;
+}
+.menu_none, .menu_none_name{
+	display:none;
+}
+  }
+  
+  @media screen and (max-width: 1000px) and (min-width: 800px) {  
+    header {
+      font-size: 100%;
+    }
+    .admPanel{
+      display: none;
+    }
+    .textbox{
+      font-size:100%;
+      border: rgba(0,0,0,.3) 2px solid;
+      height: 30px;
+    }
+    .email-field p{
+      font-size: 100%;
+      border: rgba(0,0,0,.3) 2px solid;
+    }
+    .controls{
+      font-size: 125%;
+    }
+    #toggleThemeBtn{
+      font-size: 90%;
+      }
+      .email-field p input{
+        height:30px;
+        font-size:100%;
+        border: rgba(0,0,0,.3) 2px solid;
+	width:60%;
+      }
+
+      .out select, .ou select, .ot select{
+        font-size:90%;
+        height: 30px;
+        border: rgba(0,0,0,.3) 2px solid;
+      }
+      .message{
+        font-size:90%;
+        height: 125px;
+        border: rgba(0,0,0,.3) 2px solid;
+    }
+    .add-to-db,
+    .del-to-db{
+   font-size: 90%;
+   height: 30px;
+   width: 49%;
+ }
+ .add-to-dbUser,
+ .del-to-dbUser,
+ .del-to-dbUserMess,
+ .del-to-dbUserOrder,
+ .add-to-dbOrder
+ {
+   font-size: 90%;
+   width: 49%;
+   height: 40px;
+ }
+    
+
+footer #lef_fot{
+  font-size: 115%;
+}
+
+footer #rights {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 115%;
+}
+#destroy{
+
+  padding: 3px 8px;
+  margin: 8px 10px;
+}
+  }
+  
